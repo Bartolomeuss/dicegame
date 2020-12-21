@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">    
+    <title>DiceGame</title>
+</head>
+<body>
+    <div class="container">
+        <h1 id="message">Player 1 Turn</h1>
+        <h3>First to 20 wins!</h>
+        <div class="players">
+            <div id="player1">
+                <h1>Score: 
+                    <span id="player1Scoreboard">0</span>
+                </h1>
+                <div id="player1Dice" class="dice active">-</div>
+            </div>
+            <div id="player2">
+                <h1>Score: 
+                    <span id="player2Scoreboard">0</span>
+                </h1>
+                <div id="player2Dice" class="dice">-</div>
+            </div>
+        </div>
+
+        <button id="rollBtn">Single Dice 🎲</button><br>
+        <button id="dubBtn">🎲Double Dice🎲</button>
+        <button id="resetBtn">Reset Game 🔁</button>
+        <p><span>Double Dice:</span> if the sum of the two dice is bigger than 9 an incrementing penalty is applied!</p>
+        <div id="lastWin">
+        <h2>Last Win:</h2>
+        <list id="winner-list">
+
+        </list>
+    </div>
+    
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
